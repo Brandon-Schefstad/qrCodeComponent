@@ -1,0 +1,152 @@
+/* Variables:
+QR Color: #3684FE
+BG Color: #D5E1EF
+Font Color: #292F38 */
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bg-clr: #D5E1EF;
+    --qr-clr: #3684FE;
+    --text-clr: #1c2736;
+    --text-clr2: #717275;
+  }
+  /* Clear fix hack */
+  .clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  .clear {
+    clear: both;
+  }
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--gray-8);
+  }
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  /* *:hover{
+      border: 1px solid blue;
+  } */
+
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  /* 
+  ############# 
+  ##   BASE  ##
+  #############
+  */
+  .wrapper{
+    background-color: var(--bg-clr);
+    position:relative;
+    height:100vh;
+    padding-top:10rem;
+  }
+  .card{
+    width:380px;
+    min-height:15%;
+
+    margin:auto;
+    padding: 1em;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 1.2rem;
+  }
+  .card--qr{
+    width:100%;
+    padding:4em;
+    margin-bottom:1.5rem;
+
+
+    background-color: var(--qr-clr);
+    border-radius: 1.2rem ;
+  }
+  .card--text{
+    text-align:center;
+    padding: 0em 2em;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:1.5rem;
+  }
+  .div--card--topText{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom:1.5rem;
+
+    color:var(--text-clr);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  .div--card-bottomText{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:var(--text-clr2);
+    font-weight: 500;
+    font-size:1.2rem;
+  }
