@@ -9,10 +9,10 @@ Font Color: #292F38 */
   }
   
   :root {
-    --bg-clr: #D5E1EF;
+    --bg-clr: hsl(212, 45%, 89%);
     --qr-clr: #3684FE;
-    --text-clr: #1c2736;
-    --text-clr2: #717275;
+    --text-clr: hsl(218, 44%, 22%);
+    --text-clr2: hsl(220, 15%, 55%);
   }
   /* Clear fix hack */
   .clearfix:after {
@@ -52,9 +52,6 @@ Font Color: #292F38 */
     margin: 0;
   }
   
-  /* *:hover{
-      border: 1px solid blue;
-  } */
 
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
   ul[role='list'],
@@ -101,52 +98,46 @@ Font Color: #292F38 */
   */
   .wrapper{
     background-color: var(--bg-clr);
-    position:relative;
     height:100vh;
     padding-top:10rem;
+    position:relative;
   }
   .card{
-    width:380px;
-    min-height:15%;
-
-    margin:auto;
-    padding: 1em;
-    
-    display:flex;
-    flex-direction: column;
     align-items: center;
-
     background-color: white;
     border-radius: 1.2rem;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    min-height:15%;
+    padding: 1em;
+    width:380px;
   }
   .card--qr{
-    width:100%;
-    padding:4em;
-    margin-bottom:1.5rem;
-
-
     background-color: var(--qr-clr);
     border-radius: 1.2rem ;
+    margin-bottom:1.5rem;
+    padding:3.8em;
+    width:100%;
   }
   .card--text{
-    text-align:center;
-    padding: 0em 2em;
     display:flex;
     flex-direction: column;
     margin-bottom:1.5rem;
+    padding: 0em 1em;
+    text-align:center;
   }
   .div--card--topText{
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom:1.5rem;
-
     color:var(--text-clr);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-bottom:1.5rem;
 
   }
   .div--card-bottomText{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:var(--text-clr2);
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
     font-size:1.2rem;
+    font-weight: 500;
   }
