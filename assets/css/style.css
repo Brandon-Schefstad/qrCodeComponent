@@ -109,15 +109,17 @@ Font Color: #292F38 */
     display:flex;
     flex-direction: column;
     margin:auto;
-    padding:0.6em;
+    padding:0.8em;
     width:320px;
+    height:520px;
   }
   .card--qr{
     background-color: var(--qr-clr);
     border-radius: 0.8rem ;
-    margin-bottom:1.5rem;
-    padding:3em;
+    margin-bottom:1rem;
+    padding:2.5em;
     width:100%;
+    height:58%;
   }
   .card--qr--image{
     width:100%;
@@ -133,7 +135,7 @@ Font Color: #292F38 */
   .div--card--topText{
     color:var(--text-clr);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     -webkit-text-stroke-width: 0.06em;
     margin-bottom:1rem;
 
